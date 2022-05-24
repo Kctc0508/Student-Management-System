@@ -1,4 +1,4 @@
-#Student Management System reposiory
+# Student Management System reposiory
 
 팀장 2018202104원민득()
 
