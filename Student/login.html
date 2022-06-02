@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>교수 ID</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body class="loginbody">
+
+
+
+    <div class="formlogin(event)" id="fomrlogin1">
+        <form onsubmit="id-login">
+            <label>전화번호</label>
+
+            <input type="text" placeholder="전화번호입력하시오" id="phone" /><br/>
+            <span id="inputphone-error" class="error"></span>
+
+
+        </form>
+        <form onsubmit="id-login">
+            <label>비밀번호</label>
+            <input type="password" placeholder="비밀번호입력하시오" id="password" /><br/>
+            <span id="inputpassword-error" class="error">  </span>
+
+            <label>&nbsp;</label>
+        </form>
+        <div align="center" class="loginbutton">
+            <button width="100%" onclick="login()" id="login">LOGIN</button>
+            <span class="loginbutton" id="click">
+                <a href="student.html"></a>
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="lodash.js"></script>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

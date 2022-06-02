@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>교수 ID</title>
+    <link rel="stylesheet" type="text/css" href="id.css">
+</head>
+
+<body onload="renderlistprofessors()" class="body">
+    <div class="rre">
+        <div class="form-professors">
+            <h3> 교수정보입력 </h3>
+            <label>교수 이름</label>
+            <input type="text" id="fullname" placeholder="성함 입력하시오" />
+            <span id="fullname-error" class="error"></span>
+            <br/>
+
+            <label>이메일</label>
+            <input type="text" id="gmail" placeholder="이메일 입력하시오" />
+            <span id="gmail-error" class="error"></span>
+            <br/>
+
+
+
+            <label>전화번호</label>
+            <input type="text" id="phone" placeholder="전화번호 입력하시오" />
+            <span id="phone-error" class="error"></span>
+            <br/>
+
+
+            <label>주소</label>
+            <input type="text" id="address" placeholder="주소입력하시오" />
+            <span id="address-error" class="error"></span>
+            <br/>
+
+            <label>비밀 번호</label>
+            <input type="password" id="password" placeholder="비밀번호 입력하시오" />
+            <span id="password-error" class="error"></span>
+            <br/>
+
+            <label>&nbsp;</label>
+            <button onclick="save()">저장</button>
+            <button>
+                <a href="login.html">LOGIN</a>
+            </button>
+
+
+        </div>
+        <div class="list-professors" id="list-professors">
+            <table id="grid-professors" width="650" border="1" cellpadding="0" cellpadding="0">
+            </table>
+
+        </div>
+    </div>
+    <script src="id.js"></script>
+    <script src="Lodash.js"></script>
+
+</body>
+</html>

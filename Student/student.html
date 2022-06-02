@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>학생관리시스템</title>
+    <link rel="stylesheet" type="text/css" href="student.css">
+</head>
+
+<body onload="renderliststudent()" class="studentbody">
+    <div class="esr">
+        <div class="form-student">
+            <h3> 학생정보입력 </h3>
+            <label>학생 이름</label>
+            <input type="text" id="fullname" placeholder="이름 입력하시오" />
+            <span id="fullname-error" class="error"></span>
+            <br/>
+
+            <label>이메일</label>
+            <input type="text" id="gmail" placeholder="이메일 입력하시오" />
+            <span id="gmail-error" class="error"></span>
+            <br/>
+
+
+
+            <label>잔화번호</label>
+            <input type="text" id="phone" placeholder="전화번호입력하시오" />
+            <span id="phone-error" class="error"></span>
+            <br/>
+
+
+            <label>주소</label>
+            <input type="text" id="address" placeholder="주소입력하시오" />
+            <span id="address-error" class="error"></span>
+            <br/>
+
+
+
+            <label>성별</label>
+
+            <input type="radio" name="gender" id="male" value="1" />남자
+            <input type="radio" name="gender" id="famale" value="2" />여자
+            <span id="gender-error" class="error"></span>
+            <br/>
+
+
+            <label>&nbsp;</label>
+            <button onclick="save()">저장</button>
+
+
+
+
+        </div>
+        <div class="list-student" id="list-student">
+            <h3 align="center"> 학생정보</h3>
+            <table id="grid-students" width="650"  border="1" border-size="400px" cellpadding="0" cellpadding="0">
+            </table>
+        </div>
+    </div>
+
+    <div class="search-student" id="search-student">
+        <legend>학생정보 검색</legend>
+        <input type="search" id="inputsearch" placeholder="학생 전화번호입력하시오">
+        <button onclick="buttonsearch()">검색</button>
+        <table id="search-students" width="650" border="1" cellpadding="0" cellpadding="0"></table>
+
+    </div>
+    <script src="lodash.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
